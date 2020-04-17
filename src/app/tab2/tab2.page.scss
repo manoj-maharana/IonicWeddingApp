@@ -1,0 +1,60 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+
+
+page-home {
+ 
+    .image-container {
+        min-height: 200px;
+        background-size: cover;
+    }
+ 
+    @media (min-width: 0px) {
+        .images {
+            column-count: 2;
+        }
+    }
+ 
+    @media (min-width: 420px) {
+        .images {
+            column-count: 3;
+        }
+    }
+ 
+    @media (min-width: 720px) {
+        .images {
+            column-count: 4;
+        }
+    }
+ 
+    .one-image {
+        margin: 2px;
+    }
+}
+
+.img-wrapper {
+    min-height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+ion-slides{
+	margin-top:30%;
+background:#e6e6e6;
+img{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+}

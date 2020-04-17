@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      SOUMYA
+      <ion-icon name="heart-sharp" [style.color]="'#EF3B51'"></ion-icon>
+       RACHISNU
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"> SOUMYA WEDS RACHISNU</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Card</ion-title>
+      </ion-toolbar>
+    </ion-header>,
+    <ion-content fullscreen>
+      <ion-card>
+       
+
+        <ion-slides *ngIf="slideData && slideData.length" autoplay="5000" class="slideroption" pager="true"   loop="true" speed="300">
+      <ion-slide   *ngFor="let slide of slideData">
+                <img src="assets/img/{{slide}}.jpg"  />
+          </ion-slide>
+    </ion-slides>
+        <ion-card-header>
+          <ion-card-subtitle>Our Chronicle</ion-card-subtitle>
+          <ion-card-title>The Cab Ride I’ll Never Forget</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          We met on cab ride and gradually started talking to each other. We weren't exactly sure when it happend or even when it started. All we knew that we were falling hard. We have decided on forever 26 Februrary 2020, trying knot finally. We are going to celebrate our love. Finally we are getting married and this is the happiest day of our life.          
+        </ion-card-content>
+      </ion-card>
+
+    <ion-card>       
+        <ion-card-header>          
+          <ion-card-title>Reception Venue(28.02.2020)</ion-card-title>
+        </ion-card-header>
+        <ion-item>
+    <ion-icon name="wine" slot="start"></ion-icon>
+    <ion-label>Haldiram Wedding Hall</ion-label>
+   
+
+    <ion-button fill="outline" slot="end" (click)="goToTestPage()">View</ion-button>
+  </ion-item>  
+  
+
+   <ion-item>
+    <ion-icon name="call" slot="start"></ion-icon>
+    <ion-label>8777695664(Soumya)</ion-label>    
+  </ion-item>  
+
+ 
+      </ion-card>
+
+
+ 
+    </ion-content>
+  </ion-app>
+</ion-content>
